@@ -2,6 +2,7 @@
   $white: #fff;
   $white-500: #f5f5f5;
   $grey-600: #e6e6e6;
+  $grey-800: #f8f7f8;
 
   width: 1271px;
   margin: auto;
@@ -60,6 +61,28 @@
             margin-left: 8px;
           }
         }
+      }
+    }
+
+    .search-input {
+      box-sizing: border-box;
+
+      input, button {
+        box-sizing: border-box;
+        height: 42px;
+      }
+
+      input {
+        width: 254px;
+        padding: 11px 12px;
+        border: 1px solid $grey-600;
+        border-right: none;
+      }
+
+      button {
+        width: 45px;
+        background-color: $grey-800;
+        border: 1px solid $grey-600;
       }
     }
 
