@@ -1,4 +1,8 @@
 # Satisfaction Survey Challenge
+
+### Quadro Kanban
+https://trello.com/b/0NzkeVh3/pesquisa-de-satisfa%C3%A7%C3%A3o
+
 ### Como iniciar:
 
 1. **Instalar NodeJS:** https://nodejs.org/en/
