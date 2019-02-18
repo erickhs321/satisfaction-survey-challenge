@@ -137,7 +137,7 @@
       }
 
       input {
-        width: 254px;
+        width: 238px;
         padding: 11px 12px;
         border: 1px solid $grey-600;
         border-right: none;
@@ -148,6 +148,11 @@
         background-color: $grey-800;
         border: 1px solid $grey-600;
         cursor: pointer;
+
+        i{
+          color: $black-600;
+          font-size: 14px;
+        }
       }
     }
 
