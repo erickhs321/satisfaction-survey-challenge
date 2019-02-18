@@ -1,3 +1,148 @@
-<p>
-  satisfaction-survey works!
-</p>
+<div id="satisfaction-survey">
+
+  <header>
+    <h1>Pesquisa</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li class="active"><a href="#">PONTO DE VENDA</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h2>Consolidado das lojas</h2>
+
+    <div id="satisfaction-container">
+      <div>
+        <h3>Satisfação <i class="fas fa-question-circle"></i></h3>
+        <span>82,1%</span>
+      </div>
+      <div>
+        <h3>Avaliações <i class="fas 2x fa-question-circle"></i></h3>
+        <span>1.289</span>
+      </div>
+      <div>
+        <h3>Excelente</h3>
+        <div>
+          <img src="./assets/icons/excelente.svg">
+          <span>70%</span>
+        </div>
+      </div>
+      <div>
+        <h3>Muito bom</h3>
+        <div>
+          <img src="./assets/icons/muito-bom.svg">
+          <span>70%</span>
+        </div>
+      </div>
+      <div>
+        <h3>Razoável</h3>
+        <div>
+          <img src="./assets/icons/razoavel.svg">
+          <span>70%</span>
+        </div>
+      </div>
+      <div>
+        <h3>Ruim</h3>
+        <div>
+          <img src="./assets/icons/ruim.svg">
+          <span>70%</span>
+        </div>
+      </div>
+      <div>
+        <h3>Horrível</h3>
+        <div>
+          <img src="./assets/icons/horrivel.svg">
+          <span>70%</span>
+        </div>
+      </div>
+    </div>
+
+    <h2>Lojas</h2>
+
+    <div class="search-input">
+      <input type="text" placeholder="Buscar loja">
+      <button><i class="fas fa-search fa-sm"></i></button>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>
+            <span>NOME DA LOJA</span>
+            <i class="fas fa-sort-down"></i>
+          <th>
+            <span>SATISFAÇÃO</span>
+            <i class="fas fa-sort-down"></i>
+          </th>
+          <th>
+            <span>AVALIAÇÕES</span>
+            <i class="fas fa-sort-down"></i>
+          </th>
+          <th>
+            <span>EXCELENTE</span>
+            <i class="fas fa-sort-down"></i>
+          </th>
+          <th>
+            <span>MUITO BOM</span>
+            <i class="fas fa-sort-down"></i>
+          </th>
+          <th>
+            <span>RAZOÁVEL</span>
+            <i class="fas fa-sort-down"></i>
+          </th>
+          <th>
+            <span>RUIM</span>
+            <i class="fas fa-sort-down"></i>
+          </th>
+          <th>
+            <span>HORRÍVEL</span>
+            <i class="fas fa-sort-down"></i>
+          </th>
+          <th></th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td><span>1</span>Icarai</td>
+          <td>4,0%</td>
+          <td>14</td>
+          <td>90</td>
+          <td>5</td>
+          <td>5</td>
+          <td>0</td>
+          <td>0</td>
+          <td>
+            <button>
+              <i class="fas fa-plus fa-xs"></i>
+            </button>
+          </td>
+        </tr>
+        <tr>
+            <td><span>1</span>Icarai</td>
+            <td>4,0%</td>
+            <td>14</td>
+            <td>90</td>
+            <td>5</td>
+            <td>5</td>
+            <td>0</td>
+            <td>0</td>
+            <td>
+              <button>
+                <i class="fas fa-plus fa-xs"></i>
+              </button>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+    <div id="pagination-container">
+      <button>Primeira</button>
+      <button class="active">1</button>
+      <button>2</button>
+      <button>Última</button>
+    </div>
+  </main>
+</div>
