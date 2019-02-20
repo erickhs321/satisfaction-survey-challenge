@@ -105,36 +105,21 @@
       </thead>
 
       <tbody>
-        <tr>
-          <td><span>1</span>Icarai</td>
-          <td>4,0%</td>
-          <td>14</td>
-          <td>90</td>
-          <td>5</td>
-          <td>5</td>
-          <td>0</td>
-          <td>0</td>
+        <tr *ngFor="let store of consolidatedStores">
+          <td><span>{{ store.storeId }}</span>{{ store.storeName }}</td>
+          <td></td>
+          <td></td>
+          <td>{{ store.excelente }}</td>
+          <td>{{ store.muitobom }}</td>
+          <td>{{ store.razoavel }}</td>
+          <td>{{ store.ruim }}</td>
+          <td>{{ store.horrivel }}</td>
           <td>
             <button>
               <i class="fas fa-plus fa-xs"></i>
             </button>
           </td>
         </tr>
-        <tr>
-            <td><span>1</span>Icarai</td>
-            <td>4,0%</td>
-            <td>14</td>
-            <td>90</td>
-            <td>5</td>
-            <td>5</td>
-            <td>0</td>
-            <td>0</td>
-            <td>
-              <button>
-                <i class="fas fa-plus fa-xs"></i>
-              </button>
-            </td>
-          </tr>
       </tbody>
     </table>
 
