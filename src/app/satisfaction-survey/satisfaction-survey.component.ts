@@ -82,29 +82,30 @@ export class SatisfactionSurveyComponent implements OnInit {
           this.consolidatedStores[storeIndex][returnQualificationName(score)] += score / score
         }
       })
-
-      function returnQualificationName(qualificationNumber: number) {
-        switch (qualificationNumber) {
-          case 1:
-            return horrivel
-            break;
-          case 2:
-            return ruim
-            break;
-          case 3:
-            return razoavel
-            break;
-          case 4:
-            return muitobom
-            break;
-          case 5:
-            return excelente
-            break;
-          default:
-            return null
-            break;
-        }
-      }
     })
+
+    function returnQualificationName(qualificationNumber: number) {
+      switch (qualificationNumber) {
+        case 1:
+          return horrivel
+          break;
+        case 2:
+          return ruim
+          break;
+        case 3:
+          return razoavel
+          break;
+        case 4:
+          return muitobom
+          break;
+        case 5:
+          return excelente
+          break;
+        default:
+          return null
+          break;
+      }
+    }
+
   }
 }
