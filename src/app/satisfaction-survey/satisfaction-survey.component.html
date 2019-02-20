@@ -107,8 +107,8 @@
       <tbody>
         <tr *ngFor="let store of consolidatedStores">
           <td><span>{{ store.storeId }}</span>{{ store.storeName }}</td>
-          <td></td>
-          <td></td>
+          <td>{{ (store.excelente + store.muitobom) / (store.excelente + store.muitobom  + store.razoavel +  store.ruim + store.horrivel) * 100 }}%</td>
+          <td>{{ store.excelente + store.muitobom  + store.razoavel +  store.ruim + store.horrivel }}</td>
           <td>{{ store.excelente }}</td>
           <td>{{ store.muitobom }}</td>
           <td>{{ store.razoavel }}</td>
