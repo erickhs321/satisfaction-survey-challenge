@@ -16,45 +16,45 @@
     <div id="satisfaction-container">
       <div>
         <h3>Satisfação <i class="fas fa-question-circle"></i></h3>
-        <span>82,1%</span>
+        <span>{{ consolidatedTotalStores.satisfactionPercent }}%</span>
       </div>
       <div>
         <h3>Avaliações <i class="fas 2x fa-question-circle"></i></h3>
-        <span>1.289</span>
+        <span>{{ consolidatedTotalStores.totalAvaliations }}</span>
       </div>
       <div>
         <h3>Excelente</h3>
         <div>
           <img src="./assets/icons/excelente.svg">
-          <span>70%</span>
+          <span>{{ consolidatedTotalStores.excelente }}</span>
         </div>
       </div>
       <div>
         <h3>Muito bom</h3>
         <div>
           <img src="./assets/icons/muito-bom.svg">
-          <span>70%</span>
+          <span>{{ consolidatedTotalStores.muitobom }}</span>
         </div>
       </div>
       <div>
         <h3>Razoável</h3>
         <div>
           <img src="./assets/icons/razoavel.svg">
-          <span>70%</span>
+          <span>{{ consolidatedTotalStores.razoavel }}</span>
         </div>
       </div>
       <div>
         <h3>Ruim</h3>
         <div>
           <img src="./assets/icons/ruim.svg">
-          <span>70%</span>
+          <span>{{ consolidatedTotalStores.ruim }}</span>
         </div>
       </div>
       <div>
         <h3>Horrível</h3>
         <div>
           <img src="./assets/icons/horrivel.svg">
-          <span>70%</span>
+          <span>{{ consolidatedTotalStores.horrivel }}</span>
         </div>
       </div>
     </div>
@@ -105,36 +105,21 @@
       </thead>
 
       <tbody>
-        <tr>
-          <td><span>1</span>Icarai</td>
-          <td>4,0%</td>
-          <td>14</td>
-          <td>90</td>
-          <td>5</td>
-          <td>5</td>
-          <td>0</td>
-          <td>0</td>
+        <tr *ngFor="let store of consolidatedStores">
+          <td><span>{{ store.storeId }}</span>{{ store.storeName }}</td>
+          <td>{{ (store.excelente + store.muitobom) / (store.excelente + store.muitobom  + store.razoavel +  store.ruim + store.horrivel) * 100 }}%</td>
+          <td>{{ store.excelente + store.muitobom  + store.razoavel +  store.ruim + store.horrivel }}</td>
+          <td>{{ store.excelente }}</td>
+          <td>{{ store.muitobom }}</td>
+          <td>{{ store.razoavel }}</td>
+          <td>{{ store.ruim }}</td>
+          <td>{{ store.horrivel }}</td>
           <td>
             <button>
               <i class="fas fa-plus fa-xs"></i>
             </button>
           </td>
         </tr>
-        <tr>
-            <td><span>1</span>Icarai</td>
-            <td>4,0%</td>
-            <td>14</td>
-            <td>90</td>
-            <td>5</td>
-            <td>5</td>
-            <td>0</td>
-            <td>0</td>
-            <td>
-              <button>
-                <i class="fas fa-plus fa-xs"></i>
-              </button>
-            </td>
-          </tr>
       </tbody>
     </table>
 
